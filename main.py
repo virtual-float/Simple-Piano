@@ -11,9 +11,6 @@ APP_DATA = {
 }
 
 
-
-
-
 def main():
     
     logo = pygame.image.load(APP_DATA['ICO'], 'png')
@@ -22,7 +19,8 @@ def main():
 
     pygame.display.set_caption(APP_DATA["TITLE"])
     pygame.display.set_icon(logo)
-    
+
+
     running = True
     while running:
 
@@ -30,7 +28,7 @@ def main():
             if e.type == pygame.QUIT:
                 running = False
         
-        display.fill((0, 0, 0))
+        display.fill((15, 15, 15))
 
 
         pygame.display.flip()
